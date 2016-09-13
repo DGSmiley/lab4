@@ -5,29 +5,19 @@ import java.util.Scanner;
 public class factorial {
 
 	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
 		System.out.println("Welcome to the Factorial Calculator!");
 		
-		Scanner input = new Scanner(System.in);
-		
-		String choice = "yes";
-		while (choice.equals("yes")) {
+		System.out.print("Enter an integer that's greater than 0 but less than 10: ");
 			
-			System.out.println("Enter an integer that's greater than 0 but less that 10:");
-			int x = input.nextInt(); 
-			
-			
-			 
-			
-			for (long i=0; i<=x; i++){
-				return;
-				
-			}	
-				System.out.println("Do you want to continue (yes or no):");
-				input.nextLine();
-				choice = input.nextLine();
-			
-		}
+		long i, result = 1;
+	    int x = input.nextInt();
 
-	}
-
+		for (i = 1; i <= x; i++){
+			result = result*i;
+	}		
+		System.out.println(x + "   " + result);
 }
+}
+
+
